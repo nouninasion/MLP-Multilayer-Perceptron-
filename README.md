@@ -43,4 +43,4 @@ The target output is categorical (class labels 1 to 4), so this is a classificat
 
 - You can use models like Multilayer Perceptron (MLP), Decision Trees, or other classification algorithms.
 
-- Encoding the output labels as integers (1, 2, 3, 4) is necessary for training.
+- Encoding the output labels as integers (1, 2, 3, 4) is necessary for training..
