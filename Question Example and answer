@@ -1,0 +1,60 @@
+Example Problem: Predicting New Student Enrollment for a Department
+Step 1: Define the classes (number of categories)
+We classify the number of new students enrolling into four categories:
+
+Class 1: Less than 50 students (< 50)
+
+Class 2: Between 50 and 100 students (50 - 100)
+
+Class 3: Between 100 and 150 students (100 - 150)
+
+Class 4: More than 150 students (> 150)
+
+Step 2: Example question
+You have data for the last 10 years about new student enrollment in a department, along with features like:
+
+Number of high school graduates in the region
+
+Number of applicants
+
+Average entrance exam scores
+
+Department marketing budget
+
+Regional economic index
+
+Your task is to build a model that predicts which enrollment category the department will fall into for the next academic year.
+
+Step 3: Data representation example
+Year	High School Graduates	Applicants	Average Score	Marketing Budget ($k)	Economic Index	Enrollment	Class Label
+2014	500	120	75.2	20	80	45	1
+2015	520	140	78.5	25	82	85	2
+2016	600	180	80.1	30	85	110	3
+2017	650	210	79.8	35	88	160	4
+...	...	...	...	...	...	...	...
+
+Enrollment: Actual number of new students.
+
+Class Label: Corresponding class based on enrollment ranges (1, 2, 3, or 4).
+
+Step 4: Encoding the target variable
+Since the output is categorical, encode the classes as integers:
+
+Class 1 → 0
+
+Class 2 → 1
+
+Class 3 → 2
+
+Class 4 → 3
+
+Step 5: Preparing for modeling
+Use the input features (graduates, applicants, scores, budget, economic index) as input variables.
+
+Use the encoded class label as the target variable.
+
+Train a classification model such as an MLP (Multilayer Perceptron) to predict the class label from the input features.
+
+Summary
+This problem is a multi-class classification task, where the goal is to predict the enrollment category of new students in a department based on various factors. The output is a discrete label representing one of four enrollment size classes.
+
